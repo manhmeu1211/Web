@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+</head>
+<body>
+        
+        <h1>{{ user.name }}'s Profile </h1>
+
+        
+	    
+        <p> Name : {{ user.name}} </p>
+
+        <p>Age: {{user.age}}</p>
+
+        <p>Work : {{user.work}}</p>
+
+        <p>School : {{user.school}}</p>
+
+        <p>Hobbies : {{user.hobbies}}</p>
+
+        <i>
+                <b>Gender : </b>
+                  <b>{{"Male" if user.gender1 == 1 else "Female"}}</b>  
+                    <b><i>{{user.gender}}</i></b>
+
+
+        <hr>
+   
+   
+    
+
+
+</body>
+</html>

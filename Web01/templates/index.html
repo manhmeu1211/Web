@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Intro</title>
+    
+</head>
+<body>
+
+   <h1> Welcome to league of Manhs </h1>
+
+    <!-- Jinja2 -->
+    {% for postss in posts %}
+	    
+        <h3> {{ postss.title}} </h3>
+
+        <p> {{postss.content}}</p>
+
+        <i>
+        <b>By: </b>
+          <b>{{"Mr." if postss.gender == 1 else "Ms."}}</b>  
+            <b><i>{{postss.author}}</i></b>
+        </i>
+        <hr>
+   
+    {% endfor %}
+
+
+</body>
+</html>

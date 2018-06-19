@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My self</title>
+</head>
+<body>
+
+        <h1> Welcome to league of Manhs </h1>
+        <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-9/33116199_1385230021577774_1145795041466253312_n.jpg?_nc_cat=0&oh=68937a938a137fc2dd975c85b5f5c2cb&oe=5BBAE82A" style="width:200px;height:200px" alt="No image">
+        {% for ms in info %}
+	    
+        <p> Name : {{ ms.name}} </p>
+
+
+        <p>Work : {{ms.work}}</p>
+
+        <p>School : {{ms.school}}</p>
+
+        <p>Hobbies : {{ms.hobbies}}</p>
+
+        <p>Relationship : {{ms.relationship}}</p>
+
+        <p>Quote : {{ms.quote}} </p>
+
+
+        
+
+
+
+        <hr>
+   
+    {% endfor %}
+    
+</body>
+</html>
