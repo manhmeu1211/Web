@@ -20,7 +20,7 @@ def index():
 #         return "Obese"    
         
 @app.route("/bmird/<int:w>/<int:h>")     
-def bmii(w, h):
+def bmi(w, h):
     
     bmi = w/((h/100)*2)
     status = ""
