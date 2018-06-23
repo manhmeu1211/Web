@@ -13,7 +13,6 @@ def info(username):
 
             "name" :"Lương Đức Mạnh",
             "age" : "23",
-        
             "work" : " Fullstack Dev",
             "school" : "Techkids C4E18 and ĐH Thủy lợi",
             "hobbies" : "Coding, Manga, Anime, Movie, Football, Game, Science",
@@ -37,16 +36,12 @@ def info(username):
 
             "name" :"Ngô Thiếu Gia",
             "age" : "21",
-            
             "work" : " Frontend Dev",
             "school" : "Techkids C4E18 and ĐH Thủy lợi",
             "hobbies" : "Coding, querwty, watch porn movie",
             "gender" :"",
             "gender1" : 0
-
             },
-
-
     }
     
     if username in profile:

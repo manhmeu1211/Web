@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Info Customer</title>
+</head>
+<body>
+    <h1>Khách hàng của "Tìm gấu mùa đông"</h1>
+    
+    {% for ctm in ten_customer %}
+        <div>
+            <p>Tên : {{ctm.name}} </p>
+
+            <i>
+                {%if ctm.gender == 1%}
+            <img src= "../static/image/male-profile.jpg" alt="???">
+            {%else%}
+            <img src= "../static/image/female-profile.jpg" alt="???">
+            <p>Giới tính : {{ctm.gender}} </p>
+            {%endif%}
+            </i> 
+            <p>SĐT : {{ctm.phone}} </p>
+            <p>Email : {{ctm.email}} </p>
+            <p>Yob : {{ctm.yob}} </p>
+            <p>Nghề nghiệp : {{ctm.job}}</p>
+            <p>Company : {{ctm.company}}</p>
+            <p>Contacted : {{ctm.contacted}}</p>
+        </div>
+    {%endfor%}
+</body>
+</html>
