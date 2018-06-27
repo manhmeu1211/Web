@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
+</head>
+<body>
+        <h1>Admin playground</h1>
+    <table border="1px">
+        <thead>
+            <th>STT</th>
+            <th>Tên</th>
+            <th>Yob</th>
+            <th>Giới tính</th>
+            <th>Chiều cao</th>
+            <th>SĐT</th>
+            <th>Địa chỉ</th>
+            <th>Trạng thái</th>
+        </thead>
+        <tbody>
+            
+            {% for service in all_service %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ service.name }}</td>
+                    <td>{{ service.yob }}</td>
+                    <td>
+                        {{"Nữ" if service.gender == 0 else "Nam"}}
+                    </td>
+                    <td> {{service.height}} </td>
+                    <td>{{ service.phone }}</td>
+                    <td>{{ service.address }}</td>
+                    <td>
+                    {{"Rảnh" if service.status else "Bận"}}
+                    </td>
+                    <td>
+                        <a href="{{url_for('update', service_id = service.id)}}"> Sửa </a>
+                        <a href="{{url_for('delete', service_id = service.id)}}">Xóa</a>
+                    </td>
+                </tr>
+            {% endfor %}
+
+            
+        </tbody>
+    </table>
+    <br><br>
+    <a href="{{ url_for('create') }}"><button style="width:100px;height:40px" >Add a new service</button></a>
+</body>
+</html>

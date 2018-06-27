@@ -9,25 +9,23 @@
 <body>
     <h1>Tìm gấu mùa đông</h1>
     
-    {% for sv in all_service %}
+    {% for service in all_service %}
         <div>
-            <p>Tên : {{sv.name}} </p>
 
             <i>
-                {%if sv.gender == 1%}
+                {%if service.gender == 1%}
             <img src= "../static/image/male-profile.jpg" alt="???">
             {%else%}
             <img src= "../static/image/female-profile.jpg" alt="???">
-            <p>Giới tính : {{sv.gender}} </p>
+            <p>{{service.gender}} </p>
             {%endif%}
             </i> 
 
-            <p>Chiều cao : {{sv.height}} </p>
-
-            <p>Địa chỉ : {{sv.address}} </p>
+            <p>Chiều cao : {{service.height}} </p>
             
-            <p>Yob : {{sv.yob}} </p>
+            <p>Yob : {{service.yob}} </p>
+            <a href="{{ url_for('detail', service_id = service.id) }}">More info</a>
         </div>
-    {%endfor%}
+       {%endfor%}
 </body>
 </html>
