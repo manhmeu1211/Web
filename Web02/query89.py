@@ -1,7 +1,7 @@
 import mlab
 from models.river import River
 
-mlab.connect()
+mlab.connect7()
 
 #Ex8
 

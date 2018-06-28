@@ -84,6 +84,7 @@ def update(service_id):
             name = form['name'],
             yob = form['yob'],
             address = form['address'],
+            gender = form['gender']
         )
         find_id.reload()
 
