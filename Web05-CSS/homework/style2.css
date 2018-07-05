@@ -1,0 +1,159 @@
+.fullpage{
+    display: flex;
+    height: 1400px;
+    background-color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.page{
+    display: flex;
+    height: 1200px;
+    width: 80%;
+    background-color: white;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-bottom: 5p
+}
+.leftside{
+    display: flex;
+    height: 92%;
+    width: 25%;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.mid{
+    display: flex;
+    background-color: white;
+    height: 96%;
+    width: 73%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.footer{
+    background-color: gray;
+    height:100px ;
+    width: 80%;
+}
+
+.left-orange{
+    width: 100%;
+    height: 15%;
+    background-color: orange;
+    margin-bottom: 3%;
+}
+
+.left-green{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25%;
+    width: 100%;
+    margin-bottom: 10%;
+    background-color: mediumturquoise;
+}
+
+.left-blue5{
+    background-color: teal;
+    height: 15%;
+    width: 100%;
+}
+
+.left-gray1{
+    background-color: gray;
+    height: 25%;
+    width: 100%;
+}
+
+.left-gray2{
+    background-color: gray;
+    height: 25%;
+    width: 100%;
+}
+
+.mid1{
+    display: flex;
+    background-color: lightgreen;
+    height: 46%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.top-green{
+    display: flex;
+    background-color: lightgreen;
+    height: 83%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+.mid-white {
+    height: 10%;
+    width: 25%;
+    background-color: white;
+}
+
+.mid-black {
+    height: 10%;
+    width: 50%;
+    background-color: black
+}
+
+.mid-green{
+    display: flex;
+    background-color: lightgreen;
+    height: 17%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.green4{
+    background-color: green;
+    height: 100%;
+    width: 24.5%;
+}
+
+.mid2{
+    display: flex;
+    background-color:lightblue;
+    height: 6%;
+    width: 100%;
+}
+
+.big-part{
+    background-color: lightblue;
+    height: 100%;
+    width: 60%;
+}
+
+.small-part{
+    background-color: lightcoral;
+    width: 40%;
+    height: 100%;
+}
+
+.mid3{
+    display: flex;
+    background-color: white;
+    height: 44%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.bot-wheat{
+    background-color: wheat;
+    height: 37%;
+    width: 23%;
+}
+
+.bot-salmon{
+    background-color: salmon;
+    height:59%;
+    width: 23%;
+}

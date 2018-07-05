@@ -1,0 +1,73 @@
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 70px;
+    color: white;
+}
+
+.bg-ele {
+    background-image: url("../static/image/bgele.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    width: 40%;
+
+}
+
+#jav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+
+
+.yui {
+    background-image: url("../static/image/Yui.jpg");
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-size: cover
+}
+.ozawa{
+    background-image: url("../static/image/Ozawa.jpg");
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-size: cover
+}
+.risa {
+    background-image: url("../static/image/Risa.jpg");
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-size: cover
+}
+.misaki {
+    background-image: url("../static/image/Misaki.jpg");
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    background-size: cover
+}
+
+#footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 70px;
+    color: white;
+    
+}
+
+.name {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    height: 40px;
+    width: 80px;
+    border-top-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
