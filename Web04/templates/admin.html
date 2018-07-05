@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin</title>
+</head>
+<body>
+    <h1>Admin</h1>
+    <a href="{{url_for('logout')}}"> Đăng xuất</a>
+    <br>
+    <form method="POST">
+        <label>
+            Link:
+        </label>
+        <input type="text" name="link">
+        <input type="submit" value="Submit">
+    </form>
+
+    <table border="1px">
+        <thead>
+            <th>STT</th>
+            <th>Title</th>
+            <th>Views</th>
+            <th>Link</th>
+            <th>Thumbnail</th>
+            <th>Uploader</th>
+        </thead>
+        <tbody>
+            {% for video in videos %}
+                <tr>
+                    <td>{{loop.index}}</td>
+                    <td>{{video.title}}</td>
+                    <td>{{video.views}}</td>
+                    <td>
+                       <a href="{{video.link}}" target="blank">Xem</a> 
+                    </td>
+                    <td>
+                        <img src="{{video.thumbnail}}"
+                        width="200px"
+                        height="130px">
+                    </td>
+                    <td>{{video.uploader}}</td>    
+                </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+</body>
+</html>

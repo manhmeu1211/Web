@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CMS</title>
+</head>
+<body>
+    <h2>CMS APP</h2>
+
+    <a href="{{url_for('admin')}}">Admin</a>
+
+        <br>
+        <br>
+    {%for video in videos %}
+
+    <div>
+        <img src="{{video.thumbnail}}" alt=""
+        width="200px"
+        height="130px">
+        <p>{{video.title}}</p>
+        <b>Views : {{video.views}}</b>
+        <a href="{{ url_for('detail', youtube_id = video.youtube_id) }}">Xem</a>
+        <hr>
+    </div>
+    
+    {%endfor%}
+</body>
+</html>
