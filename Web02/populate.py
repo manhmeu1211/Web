@@ -2,6 +2,7 @@ from models.service import Service
 import mlab
 from random import randint, choice
 from faker import Faker
+from models.user import User
 
 
 mlab.connect()
@@ -51,3 +52,11 @@ new_service = Service(
     measurements = ["unknow","unknow","unknow"],
 )
 new_service.save()
+
+new_user = User(
+    fullname = "Lương Mạnh",
+    email = "aaA",
+    username = "admin",
+    password = "admin"
+)
+new_user.save()

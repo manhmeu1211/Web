@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Order</title>
+</head>
+<body>
+    <h1>Danh sach yeu cau</h1>
+    <table border="1px">
+        <thead>
+            <td>STT</td>
+            <td>Doi tac</td>
+            <td>Nguoi dung</td>
+            <td>Thoi gian yeu cau</td>
+            <td></td>
+        </thead>
+        <tbody>
+            {% for order in all_order %}
+                <tr>
+                    <td>{{ loop.index}}</td>
+                    <td>{{ order.service_id.name}}</td>
+                    <td>{{ order.user_id.fullname }}</td>
+                    <td>{{ order.time_order}}</td>
+                    {% if order.is_accepted == False %}
+                    <td><a href="{{ url_for('order_accept', order_id=order.id)}}">Phe duyet yeu cau</a></td>
+                    {% else %}
+                    <td>Da xu ly</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
