@@ -11,9 +11,9 @@
     <table border="1px">
         <thead>
             <td>STT</td>
-            <td>Doi tac</td>
-            <td>Nguoi dung</td>
-            <td>Thoi gian yeu cau</td>
+            <td>Partner</td>
+            <td>Customer</td>
+            <td>Time request</td>
             <td></td>
         </thead>
         <tbody>
@@ -26,7 +26,7 @@
                     {% if order.is_accepted == False %}
                     <td><a href="{{ url_for('order_accept', order_id=order.id)}}">Phe duyet yeu cau</a></td>
                     {% else %}
-                    <td>Da xu ly</td>
+                    <td>...</td>
                     {% endif %}
                 </tr>
             {% endfor %}
