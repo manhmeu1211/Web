@@ -4,26 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bear</title>
+    {%include 'metadata.html' %}
+    {%include 'homeplates/navigation.html'%}
+    {%include 'homeplates/carousel.html' %}
+    
 </head>
 <body>
-    <h1>Mùa đông không lạnh</h1>
-    <a href="{{url_for('login')}}">Login</a>
-    <br>
-    <br>
-    <a href="{{url_for('searchinfo', gender = 1)}}">Chạm vào anh đi!!!</a>
-    <br>
-    <br>
-    <a href="{{url_for('searchinfo', gender = 0)}}">Chạm vào em đi!!!</a>
-    <br>
-    <br>
-    <!-- <a href="{{url_for('customer', gender = 1)}}">10 males Customer</a> -->
-    <br>
-    <br>
-    <br>
-    <h1>Admin</h1>
-    <a href="{{ url_for('admin') }}">Admin</a>
-    <a href="{{url_for('logout')}}"> Đăng xuất</a>
+      
+    <div class="mb-50px">
+        <h3 class="text-center mt-5">Chào mừng các bạn đến với Mùa đông không lạnh</h3>
+        <p class="text-center mt-3">"Chúng tôi ở đây để giúp các bạn có một mối quan hệ giả mà thật, thật mà giả để vượt qua mùa đông cô đơn này."</p>
+        <div class="d-flex justify-content-around align-items-center">
+        <div class="d-inline-block h-40 w-60 mt-5 col-md-5">
+        <a href="{{url_for('searchinfo', gender = 1)}}">
+        <img src= "../static/image/female.jpg" style="width:500px;height:250px" alt="???">
+        </a>
+        </div>
+        <div class="d-inline-block h-40 w-60 mt-5 col-md-5">
+        <a href="{{url_for('searchinfo', gender = 0)}}">
+        <img src= "../static/image/male.jpg" style="width:500px;height:250px" alt="???">
+        </a>
+        </div>  
+    </div>
+    </div>
+    <div class="bg-im mt-5 h-450px w-100px">
+    {%include 'homeplates/vote.html'%}
+    </div>
+    {%include 'homeplates/footer.html'%}
+    
+   
+
+   
+
+
+    
     
 </body>
 </html>

@@ -117,7 +117,7 @@ def login():
                 session['loggedin'] = True
                 user_id = str(log_user['id'])
                 session['user_id'] = user_id
-                return redirect(url_for('detail',  service_id = session['user_id']))
+                return redirect(url_for('index'))
         else:
             return "Login failed"
 

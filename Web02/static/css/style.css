@@ -1,0 +1,162 @@
+.font-lobster{
+    font-family: 'Lobster', cursive;
+}
+.mb-250px{
+    margin-bottom: 250px;
+}
+.mb-300px{
+    margin-bottom: 300px;
+}
+
+.mb-50px{
+    margin-bottom: 50px;
+}
+
+.mr-10{
+    margin-right: 20px;
+}
+
+.bg-im{
+    background-image: url(../image/steel.jpg);
+    background-size: cover
+}
+
+.bg-vote{
+    background-image: url(../image/best.jpg);
+    background-size: cover
+}
+
+.bg-vote1 {
+    background-image: url(../image/dolinh.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-vote2 {
+    background-image: url(../image/kieutrinh.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-vote3 {
+    background-image: url(../image/nancy-9.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-vote4 {
+    background-image: url(../image/aa11.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-vote5 {
+    background-image: url(../image/lananh.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-vote6 {
+    background-image: url(../image/missthy.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-vote7 {
+    background-image: url(../image/ribisachi.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-vote8 {
+    background-image: url(../image/nene.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.border-w {
+    border-width: 10px;
+}
+
+.h-80 {
+    height: 80%;
+}
+
+.w-30 {
+    width: 40%;
+}
+
+.h-20 {
+    height: 20%;
+}
+
+.w-45 {
+    width: 45%;
+}
+
+.h-70px {
+    height: 70px;
+}
+
+.h-200px {
+    height: 200px;
+}
+
+.w-80 {
+    width: 80%
+}
+
+.h-30 {
+    height: 30%;
+}
+
+.h-70 {
+    height: 70%;
+}
+
+.h-70 {
+    height: 70%;
+}
+
+.h-150px {
+    height: 150px;
+}
+
+.w-150px {
+    width: 150px;
+}
+
+.h-400px {
+    height: 400px;
+}
+
+.h-450px {
+    height: 450px;
+}
+
+.h-40 {
+    height: 40%;
+}
+
+.h-60 {
+    height: 60%;
+}
+
+.h-20 {
+    height: 20%;
+}
+
+.w-60 {
+    width: 60%
+}
+
+.w-35 {
+    width: 35%
+}
+.w-250{
+    width: 250px;
+}
+.mt-5{
+    margin-top: 5px;
+}
